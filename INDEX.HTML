@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Project - Proyecto Sostenible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="project-header">
+            <h1>📋 PROYECTO: Diseño Portafolio Productos Sostenibles</h1>
+            <div class="project-info">
+                <span><strong>Duración:</strong> 212 días</span>
+                <span><strong>Inicio:</strong> 15/09/2025</span>
+                <span><strong>Fin:</strong> 14/04/2026</span>
+            </div>
+        </header>
+
+        <div class="project-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tarea</th>
+                        <th>Duración</th>
+                        <th>Inicio</th>
+                        <th>Fin</th>
+                        <th>Predecesoras</th>
+                        <th>Recursos</th>
+                        <th>Progreso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Nivel 0 -->
+                    <tr class="level-0">
+                        <td>0</td>
+                        <td>PROYECTO: Diseño Portafolio Productos Sostenibles</td>
+                        <td>212 días</td>
+                        <td>15/09/2025</td>
+                        <td>14/04/2026</td>
+                        <td></td>
+                        <td>Gerente Proyecto</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 1 -->
+                    <tr class="level-1">
+                        <td>1</td>
+                        <td>▶ GESTIÓN INICIAL DEL PROYECTO</td>
+                        <td>15 días</td>
+                        <td>15/09/2025</td>
+                        <td>30/09/2025</td>
+                        <td>0</td>
+                        <td>Gerente Proyecto</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 2 -->
+                    <tr class="level-2">
+                        <td>1.1</td>
+                        <td>📄 Definición del Alcance</td>
+                        <td>5 días</td>
+                        <td>15/09/2025</td>
+                        <td>19/09/2025</td>
+                        <td>1</td>
+                        <td>Luis Alarcón</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>1.2</td>
+                        <td>👥 Identificación Partes Interesadas</td>
+                        <td>4 días</td>
+                        <td>20/09/2025</td>
+                        <td>23/09/2025</td>
+                        <td>1.1</td>
+                        <td>Jenny Duque</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>1.3</td>
+                        <td>📢 Plan de Comunicaciones</td>
+                        <td>3 días</td>
+                        <td>24/09/2025</td>
+                        <td>26/09/2025</td>
+                        <td>1.2</td>
+                        <td>Jessica López</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>1.4</td>
+                        <td>⚙️ Metodología de Trabajo</td>
+                        <td>3 días</td>
+                        <td>27/09/2025</td>
+                        <td>29/09/2025</td>
+                        <td>1.3</td>
+                        <td>Gustavo Giraldo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 1 - INVESTIGACIÓN -->
+                    <tr class="level-1">
+                        <td>2</td>
+                        <td>▶ INVESTIGACIÓN MATERIALES SOSTENIBLES</td>
+                        <td>30 días</td>
+                        <td>01/10/2025</td>
+                        <td>30/10/2025</td>
+                        <td>1</td>
+                        <td>Lizeth Rátiva</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>2.1</td>
+                        <td>📊 Estudio Mercado Materiales</td>
+                        <td>10 días</td>
+                        <td>01/10/2025</td>
+                        <td>10/10/2025</td>
+                        <td>1.4</td>
+                        <td>Equipo Completo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>2.2</td>
+                        <td>🔬 Evaluación Técnica Materiales</td>
+                        <td>15 días</td>
+                        <td>11/10/2025</td>
+                        <td>25/10/2025</td>
+                        <td>2.1</td>
+                        <td>Luis Alarcón</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 3 - Submateriales -->
+                    <tr class="level-3">
+                        <td>2.2.1</td>
+                        <td>🌿 Algodón Orgánico</td>
+                        <td>4 días</td>
+                        <td>11/10/2025</td>
+                        <td>14/10/2025</td>
+                        <td>2.1</td>
+                        <td>Luis Alarcón</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-3">
+                        <td>2.2.2</td>
+                        <td>🔄 Poliéster Reciclado</td>
+                        <td>4 días</td>
+                        <td>15/10/2025</td>
+                        <td>18/10/2025</td>
+                        <td>2.2.1</td>
+                        <td>Luis Alarcón</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-3">
+                        <td>2.2.3</td>
+                        <td>🎋 Fibras de Bambú</td>
+                        <td>4 días</td>
+                        <td>19/10/2025</td>
+                        <td>22/10/2025</td>
+                        <td>2.2.2</td>
+                        <td>Luis Alarcón</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-3">
+                        <td>2.2.4</td>
+                        <td>🌱 Fibras de Cáñamo</td>
+                        <td>3 días</td>
+                        <td>23/10/2025</td>
+                        <td>25/10/2025</td>
+                        <td>2.2.3</td>
+                        <td>Luis Alarcón</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>2.3</td>
+                        <td>🏭 Análisis de Proveedores</td>
+                        <td>12 días</td>
+                        <td>15/10/2025</td>
+                        <td>26/10/2025</td>
+                        <td>2.1</td>
+                        <td>Jenny Duque</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>2.4</td>
+                        <td>💰 Evaluación Costos-Beneficios</td>
+                        <td>8 días</td>
+                        <td>23/10/2025</td>
+                        <td>30/10/2025</td>
+                        <td>2.2,2.3</td>
+                        <td>Gustavo Giraldo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 1 - DISEÑO -->
+                    <tr class="level-1">
+                        <td>3</td>
+                        <td>▶ DISEÑO PORTAFOLIO PRODUCTOS</td>
+                        <td>45 días</td>
+                        <td>01/11/2025</td>
+                        <td>15/12/2025</td>
+                        <td>2</td>
+                        <td>Jessica López</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>3.1</td>
+                        <td>📝 Definición Líneas de Producto</td>
+                        <td>10 días</td>
+                        <td>01/11/2025</td>
+                        <td>10/11/2025</td>
+                        <td>2.4</td>
+                        <td>Equipo Completo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>3.2</td>
+                        <td>🎨 Diseño de Prototipos</td>
+                        <td>20 días</td>
+                        <td>11/11/2025</td>
+                        <td>30/11/2025</td>
+                        <td>3.1</td>
+                        <td>Luis Alarcón</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>3.3</td>
+                        <td>🛍️ Selección Materiales por Línea</td>
+                        <td>10 días</td>
+                        <td>01/12/2025</td>
+                        <td>10/12/2025</td>
+                        <td>3.2</td>
+                        <td>Jessica López</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>3.4</td>
+                        <td>💲 Estrategia Pricing y Posicionamiento</td>
+                        <td>8 días</td>
+                        <td>08/12/2025</td>
+                        <td>15/12/2025</td>
+                        <td>3.3</td>
+                        <td>Gustavo Giraldo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>3.5</td>
+                        <td>👥 Validación con Grupos Focales</td>
+                        <td>5 días</td>
+                        <td>11/12/2025</td>
+                        <td>15/12/2025</td>
+                        <td>3.4</td>
+                        <td>Jenny Duque</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 1 - CADENA DE SUMINISTRO -->
+                    <tr class="level-1">
+                        <td>4</td>
+                        <td>▶ PLANIFICACIÓN CADENA DE SUMINISTRO</td>
+                        <td>35 días</td>
+                        <td>16/12/2025</td>
+                        <td>19/01/2026</td>
+                        <td>3</td>
+                        <td>Lizeth Rátiva</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>4.1</td>
+                        <td>✅ Selección Proveedores Certificados</td>
+                        <td>12 días</td>
+                        <td>16/12/2025</td>
+                        <td>27/12/2025</td>
+                        <td>3.5</td>
+                        <td>Lizeth Rátiva</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>4.2</td>
+                        <td>📋 Procedimientos Compra Sostenible</td>
+                        <td>10 días</td>
+                        <td>28/12/2025</td>
+                        <td>06/01/2026</td>
+                        <td>4.1</td>
+                        <td>Gustavo Giraldo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>4.3</td>
+                        <td>🚚 Logística y Almacenamiento</td>
+                        <td>8 días</td>
+                        <td>07/01/2026</td>
+                        <td>14/01/2026</td>
+                        <td>4.2</td>
+                        <td>Jessica López</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>4.4</td>
+                        <td>🏅 Control Calidad y Certificaciones</td>
+                        <td>5 días</td>
+                        <td>15/01/2026</td>
+                        <td>19/01/2026</td>
+                        <td>4.3</td>
+                        <td>Luis Alarcón</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 1 - COMUNICACIÓN -->
+                    <tr class="level-1">
+                        <td>5</td>
+                        <td>▶ PROTOCOLOS COMUNICACIÓN INTERNA</td>
+                        <td>25 días</td>
+                        <td>20/01/2026</td>
+                        <td>13/02/2026</td>
+                        <td>4</td>
+                        <td>Jenny Duque</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>5.1</td>
+                        <td>🔄 Flujos Comunicación entre Áreas</td>
+                        <td>8 días</td>
+                        <td>20/01/2026</td>
+                        <td>27/01/2026</td>
+                        <td>4.4</td>
+                        <td>Jenny Duque</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>5.2</td>
+                        <td>🛠️ Herramientas Colaborativas</td>
+                        <td>7 días</td>
+                        <td>28/01/2026</td>
+                        <td>03/02/2026</td>
+                        <td>5.1</td>
+                        <td>Jessica López</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>5.3</td>
+                        <td>🎓 Capacitación Comunicación Efectiva</td>
+                        <td>5 días</td>
+                        <td>04/02/2026</td>
+                        <td>08/02/2026</td>
+                        <td>5.2</td>
+                        <td>Gustavo Giraldo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>5.4</td>
+                        <td>📊 Seguimiento y Ajuste Comunicaciones</td>
+                        <td>5 días</td>
+                        <td>09/02/2026</td>
+                        <td>13/02/2026</td>
+                        <td>5.3</td>
+                        <td>Jenny Duque</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 1 - MÉTRICAS -->
+                    <tr class="level-1">
+                        <td>6</td>
+                        <td>▶ MÉTRICAS Y SISTEMA DE CONTROL</td>
+                        <td>20 días</td>
+                        <td>14/02/2026</td>
+                        <td>05/03/2026</td>
+                        <td>5</td>
+                        <td>Gustavo Giraldo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>6.1</td>
+                        <td>📈 Establecimiento de KPIs</td>
+                        <td>6 días</td>
+                        <td>14/02/2026</td>
+                        <td>19/02/2026</td>
+                        <td>5.4</td>
+                        <td>Gustavo Giraldo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>6.2</td>
+                        <td>📊 Dashboard de Monitoreo</td>
+                        <td>8 días</td>
+                        <td>20/02/2026</td>
+                        <td>27/02/2026</td>
+                        <td>6.1</td>
+                        <td>Jessica López</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>6.3</td>
+                        <td>🔍 Seguimiento Post-Lanzamiento</td>
+                        <td>4 días</td>
+                        <td>28/02/2026</td>
+                        <td>03/03/2026</td>
+                        <td>6.2</td>
+                        <td>Luis Alarcón</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>6.4</td>
+                        <td>🌍 Evaluación Impacto Ambiental</td>
+                        <td>2 días</td>
+                        <td>04/03/2026</td>
+                        <td>05/03/2026</td>
+                        <td>6.3</td>
+                        <td>Equipo Completo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 1 - HOJA DE RUTA -->
+                    <tr class="level-1">
+                        <td>7</td>
+                        <td>▶ HOJA DE RUTA ESTRATÉGICA</td>
+                        <td>15 días</td>
+                        <td>06/03/2026</td>
+                        <td>20/03/2026</td>
+                        <td>6</td>
+                        <td>Gerente Proyecto</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>7.1</td>
+                        <td>📄 Documentación de Procesos</td>
+                        <td>6 días</td>
+                        <td>06/03/2026</td>
+                        <td>11/03/2026</td>
+                        <td>6.4</td>
+                        <td>Lizeth Rátiva</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>7.2</td>
+                        <td>📅 Cronograma Implementación</td>
+                        <td>5 días</td>
+                        <td>12/03/2026</td>
+                        <td>16/03/2026</td>
+                        <td>7.1</td>
+                        <td>Gustavo Giraldo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>7.3</td>
+                        <td>⚠️ Plan de Riesgos y Mitigación</td>
+                        <td>4 días</td>
+                        <td>17/03/2026</td>
+                        <td>20/03/2026</td>
+                        <td>7.2</td>
+                        <td>Jenny Duque</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <!-- HITO IMPORTANTE -->
+                    <tr class="milestone">
+                        <td>7.4</td>
+                        <td>⭐ ENTREGA FINAL HOJA DE RUTA</td>
+                        <td>0 días</td>
+                        <td>03/04/2026</td>
+                        <td>03/04/2026</td>
+                        <td>7.3</td>
+                        <td>Gerente Proyecto</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 100%"></div></div></td>
+                    </tr>
+
+                    <!-- Nivel 1 - CIERRE -->
+                    <tr class="level-1">
+                        <td>8</td>
+                        <td>▶ CIERRE DEL PROYECTO</td>
+                        <td>10 días</td>
+                        <td>04/04/2026</td>
+                        <td>14/04/2026</td>
+                        <td>7</td>
+                        <td>Gerente Proyecto</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>8.1</td>
+                        <td>✅ Validación Entregables con Sponsor</td>
+                        <td>3 días</td>
+                        <td>04/04/2026</td>
+                        <td>06/04/2026</td>
+                        <td>7.4</td>
+                        <td>Gerente Proyecto</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>8.2</td>
+                        <td>📚 Lecciones Aprendidas</td>
+                        <td>2 días</td>
+                        <td>07/04/2026</td>
+                        <td>08/04/2026</td>
+                        <td>8.1</td>
+                        <td>Equipo Completo</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>8.3</td>
+                        <td>📊 Presentación Resultados</td>
+                        <td>3 días</td>
+                        <td>09/04/2026</td>
+                        <td>11/04/2026</td>
+                        <td>8.2</td>
+                        <td>Gerente Proyecto</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                    <tr class="level-2">
+                        <td>8.4</td>
+                        <td>🗄️ Archivo de Documentación</td>
+                        <td>3 días</td>
+                        <td>12/04/2026</td>
+                        <td>14/04/2026</td>
+                        <td>8.3</td>
+                        <td>Lizeth Rátiva</td>
+                        <td><div class="progress-bar"><div class="progress" style="width: 0%"></div></div></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="legend">
+            <h3>Leyenda:</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="color-box level-0"></div>
+                    <span>Nivel 0 - Proyecto Principal</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box level-1"></div>
+                    <span>Nivel 1 - Fases Principales</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box level-2"></div>
+                    <span>Nivel 2 - Tareas Específicas</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box level-3"></div>
+                    <span>Nivel 3 - Subtareas</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box milestone"></div>
+                    <span>Hitos Importantes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
